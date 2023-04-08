@@ -7,6 +7,7 @@ from pytest import raises, approx
 def test():
     import dataclasses_sqlitedict
 
+    _ = dataclasses_sqlitedict.dataclasses
     _ = dataclasses_sqlitedict.SingleRowDataModel
     _ = dataclasses_sqlitedict.SingleTableDataModel
 
