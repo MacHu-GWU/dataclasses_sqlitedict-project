@@ -12,7 +12,8 @@ from sqlitedict import SqliteDict
 class DataModel:
     """
     Base class for sqlite backed dataclass. Each instance of class is a row
-    in the table.
+    in the table. And all the instances of the same class share the same
+    database table.
 
     Below is an usage example:
 
@@ -44,6 +45,9 @@ class DataModel:
         )
 
     def write(self):
+        """
+        Write data to database.
+        """
         if self.db is None:
             raise NotImplementedError(
                 "you must set a class attribute (NOT instance attribute) 'db', "
@@ -55,6 +59,9 @@ class DataModel:
 
     @classmethod
     def read(cls, primary_key: str) -> "DataModel":
+        """
+        Create a new instance of class from database.
+        """
         if cls.db is None:
             raise NotImplementedError(
                 "you must set a class attribute (NOT instance attribute) 'db', "
