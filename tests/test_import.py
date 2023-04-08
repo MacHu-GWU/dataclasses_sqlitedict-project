@@ -6,7 +6,9 @@ from pytest import raises, approx
 
 def test():
     import dataclasses_sqlitedict
-    pass
+
+    _ = dataclasses_sqlitedict.SingleRowDataModel
+    _ = dataclasses_sqlitedict.SingleTableDataModel
 
 
 if __name__ == "__main__":
