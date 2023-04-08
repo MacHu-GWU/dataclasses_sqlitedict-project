@@ -2,6 +2,8 @@
 dataclasses_sqlitedict_venv/
 dataclasses_sqlitedict.egg-info/
 dataclasses_sqlitedict-*/
+
+*.sqlite
 tmp/
 
 

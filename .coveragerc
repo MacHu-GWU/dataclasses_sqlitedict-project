@@ -2,12 +2,10 @@
 # for more info: https://coverage.readthedocs.io/en/latest/config.html
 [run]
 omit =
-    dataclasses_sqlitedict/_version.py
-    dataclasses_sqlitedict/cli.py
-    dataclasses_sqlitedict/pkg/*
     dataclasses_sqlitedict/docs/*
     dataclasses_sqlitedict/tests/*
-    dataclasses_sqlitedict/handlers/*
+    dataclasses_sqlitedict/_version.py
+    dataclasses_sqlitedict/compat.py
 
 [report]
 # Regexes for lines to exclude from consideration
