@@ -30,7 +30,7 @@ class DataModel:
             def primary_key(self) -> str:
                 return self.username
 
-        user = Uer(username="alice", password="pwd")
+        user = User(username="alice", password="pwd")
         user.write()
 
         user1 = User.read("alice")
