@@ -16,6 +16,7 @@ __github_username__ = "MacHu-GWU"
 
 try:
     from .api import (
+        dataclasses,
         SingleRowDataModel,
         SingleTableDataModel,
     )
